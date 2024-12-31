@@ -1,0 +1,233 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+/* Bootstrap Icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", serif;
+}
+body{
+  height: 100vh;
+} 
+/* Primary color */
+:root{
+  --Lime: hsl(61, 70%, 52%);
+  --Red: hsl(4, 69%, 50%);
+}
+/* Secondary color */
+:root{
+  --Slate-100: hsl(202, 86%, 94%);
+  --Slate-300: hsl(203, 41%, 72%);
+  --Slate-500: hsl(200, 26%, 54%);
+  --Slate-700: hsl(200, 24%, 40%);
+  --Slate-900: hsl(202, 55%, 16%);
+}
+.Mortgage-container{
+  padding: 10px;
+}
+a{
+  color: var(--Slate-500);
+  font-size: 15px;
+  font-weight: 500;
+}
+ .title h3{
+  padding-bottom: 6px;
+}
+[type=Number]::-webkit-inner-spin-button , ::-webkit-outer-spin-button{
+  -webkit-appearance: none;
+}
+.input-group{
+  display: flex;
+  flex-direction: column;
+}
+label{
+  padding-top: 10px;
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--Slate-700);
+}
+.input-group-text{
+
+  padding: 10px 10px;
+  background-color: var(--Slate-100);
+  border: 1px solid var(--Slate-500);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: var(--Slate-700);
+  font-size: 18px;
+  border-right: none;
+}
+.form-control {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid var(--Slate-500);
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  outline: none;
+  border-left: none;
+  font-weight: bold;
+}
+.group{
+  display: flex;
+  padding: 10px 0;
+}
+.year{
+  font-size: 15px;
+  font-weight: bold;
+  border: 1px solid;
+  border-radius: 0;
+  border-left: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.term{
+
+  border:none;
+  border-radius: 0;
+  border: 1px solid var(--Slate-500);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-right: none;
+}
+.type{
+  display: flex;
+  flex-direction: column;
+}
+.repayment , .intrest{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 10px 15px;
+  font-size: 15px;
+  color: var(--Slate-900);
+  font-weight: bold;
+  border: 1px solid var(--Slate-500);
+  border-radius: 5px;
+  outline: none;
+  background-color: white;
+  cursor: pointer;
+}
+.repayment{
+  margin: 3% 0;
+}
+.radio-btn-repay{
+  padding-right: 5px;
+}
+.radio-btn-repay input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--Slate-500);
+  border-radius: 50%;
+  outline: none;
+  position: relative;
+}
+.radio-btn-repay input[type="radio"]:checked::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--Lime);
+  position: absolute;
+}
+
+.calc{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.img{
+  padding-right: 5px;
+  width: 30px;
+}
+.calc-btn{
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--Slate-500);
+  background-color: var(--Lime);
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--Slate-900);
+  padding: 10px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+/* Result Container */
+
+.result-container{
+  background-color: var(--Slate-900);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text h3{
+  color: white;
+  padding-top: 10px;
+}
+.text p{
+  color: var(--Slate-300);
+  font-size: 15px;
+  padding-top: 10px;
+  text-align: center;
+  text-wrap: wrap;
+}
+.result-container{
+  display: flex;
+}
+ /* Result View */
+
+ .result-view-container{
+  background-color: var(--Slate-900);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 10px;
+ }
+ .result-text h4{
+  color: white;
+  padding-top: 10px;
+ }
+ .result-text p{
+  padding-top: 10px;
+  color: var(--Slate-300);
+  font-size: 14px;
+ }
+ .result-box{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  background-color: var(--Slate-700);
+  border-radius: 10px;
+  border-top: 8px solid var(--Lime);
+  padding: 10px;
+}
+.result-box h4{
+  padding-top: 10px;
+} 
+.payment{
+  font-size: 24px;
+  color: var(--Lime);
+  font-weight: bold;
+  padding-top: 5px;
+}
+hr{
+  margin-top: 15px;
+}
+.result-box h6{
+  padding-top: 6px;
+  color: var(--Slate-100);
+}
+.result-view-container{
+  display: none;
+}

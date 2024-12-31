@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/index.css">
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+</head>
+<body>
+  <main>
+    <div class="Mortgage-container">
+      <div class="title">
+        <h3>Mortage Calculator</h3>
+        <a href="#">Clear All</a>
+      </div>
+
+      <!-- Input Amount -->
+      <div class="Mortgage-amount input-group">
+        <label for="" class="mortgage">Mortgage Amount</label>
+        <div class="group">
+          <span class="currency input-group-text">
+            <i class="bi bi-currency-pound"></i>
+          </span>
+          <input type="number" class="form-control">
+        </div>
+      </div>
+      <!-- Tenure -->
+      <div class="Mortgage-amount input-group">
+        <label for="" class="mortgage">Mortgage Term</label>
+        <div class="group">
+          <input type="number" class="form-control term">
+          <span class="year input-group-text">
+            Years
+          </span>
+        </div>
+      </div>
+      <!-- intrest rate -->
+      <div class="Mortgage-amount input-group">
+        <label for="" class="mortgage">Intrest Rate</label>
+        <div class="group">
+          <input type="number" class="form-control term">
+          <span class="year input-group-text">
+            %
+          </span>
+        </div>
+      </div>
+      <!-- Mortage Type -->
+       <div class="type">
+        <label for="">Mortgage Type</label>
+        <button class="repayment">
+          <span class="radio-btn-repay">
+            <input type="radio" name="mortgage" value="repayment">
+          </span>
+          Repayment
+        </button>
+        <button class="intrest">
+          <span class="radio-btn-repay">
+            <input type="radio" name="mortgage" value="interest">
+          </span>
+          Interest Only
+        </button>
+       </div>
+       <!-- Calculate -->
+        <div class="calc">
+          <button class="calc-btn">
+            <span>
+              <img src="./assets/images/icon-calculator.svg" alt="" class="img">
+            </span>
+            Calculate Repayments
+          </button>
+        </div>
+    </div>
+    <!-- Result Container -->
+    <section>
+      <div class="result-container">
+        <div class="empty-image">
+          <img src="./assets/images/illustration-empty.svg" alt="">
+        </div>
+        <div class="text">
+          <h3>Results shown here</h3>
+          <p> Complete the form and click “calculate repayments” to see what 
+            your monthly repayments would be.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Result View Container -->
+     <section>
+      <div class="result-view-container">
+        <div class="result-text">
+          <h4>Your results</h4>
+          <p>  Your results are shown below based on the information you provided. 
+            To adjust the results, edit the form and click “calculate repayments” again.</p>
+        </div>
+        <div class="result-box">
+          <div class="monthly">
+            <h4>Your monthly repayments</h4>
+          </div>
+          <div class="payment">
+            <h1><i class="bi bi-currency-pound"></i>1,794.40/-</h1>
+          </div>
+          <hr>
+          <div class="monthly">
+            <h4>Total you'll repay over the term</h4>
+          </div>
+          <div class="payment">
+            <h6><i class="bi bi-currency-pound"></i>539,322.94/-</h6>
+          </div>
+        </div>
+      </div>
+     </section>
+  </main>
+  <script src="./scripts/index.js"></script>
+</body>
+</html>
